@@ -15,6 +15,7 @@
 		A827448F24641553008E360A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A827448E24641553008E360A /* Assets.xcassets */; };
 		A827449224641553008E360A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827449024641553008E360A /* LaunchScreen.storyboard */; };
 		A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */; };
+		A9DF6AB62464807F00C55C72 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF6AB52464807F00C55C72 /* CustomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A827449124641553008E360A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A827449324641553008E360A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNavigationController.swift; sourceTree = "<group>"; };
+		A9DF6AB52464807F00C55C72 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,23 +90,24 @@
 		A9DF6AAE246429C600C55C72 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A9DF6AAF246429D200C55C72 /* Register View */,
+				A9DF6AAF246429D200C55C72 /* SignIn View */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		A9DF6AAF246429D200C55C72 /* Register View */ = {
+		A9DF6AAF246429D200C55C72 /* SignIn View */ = {
 			isa = PBXGroup;
 			children = (
 				A827448924641551008E360A /* SignInViewController.swift */,
 				A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */,
 			);
-			path = "Register View";
+			path = "SignIn View";
 			sourceTree = "<group>";
 		};
 		A9DF6AB22464689800C55C72 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				A9DF6AB52464807F00C55C72 /* CustomColor.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				A827448A24641551008E360A /* SignInViewController.swift in Sources */,
 				A827448624641551008E360A /* AppDelegate.swift in Sources */,
 				A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */,
+				A9DF6AB62464807F00C55C72 /* CustomColor.swift in Sources */,
 				A827448824641551008E360A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

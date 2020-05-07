@@ -110,7 +110,7 @@ class SignInViewController: UIViewController {
         loginLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         loginLabel.font = UIFont.systemFont(ofSize: 15)
-        loginLabel.textColor = .systemBlue
+        loginLabel.textColor = CustomColor.shared.blueText
         loginLabel.text = "Ваш E-mail"
     }
     
@@ -134,7 +134,7 @@ class SignInViewController: UIViewController {
         logLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         logLineView.alpha = 0.7
         
-        logLineView.backgroundColor = .black
+        logLineView.backgroundColor = CustomColor.shared.grayText
     }
     
     func setupPasswordLabel() {
@@ -144,7 +144,7 @@ class SignInViewController: UIViewController {
         passwordLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
         
         passwordLabel.font = UIFont.systemFont(ofSize: 15)
-        passwordLabel.textColor = .systemBlue
+        passwordLabel.textColor = CustomColor.shared.blueText
         passwordLabel.text = "Ваш пароль"
     }
     
@@ -155,8 +155,8 @@ class SignInViewController: UIViewController {
         passwordTextField.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         passwordTextField.backgroundColor = .clear
-        passwordTextField.textColor = .darkGray
-        passwordTextField.tintColor = .darkGray
+        passwordTextField.textColor = CustomColor.shared.grayText
+        passwordTextField.tintColor = CustomColor.shared.grayText
         passwordTextField.font = UIFont.systemFont(ofSize: 20)
         passwordTextField.textAlignment = .left
     }
@@ -168,7 +168,7 @@ class SignInViewController: UIViewController {
         pasLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         pasLineView.alpha = 0.7
         
-        pasLineView.backgroundColor = .black
+        pasLineView.backgroundColor = CustomColor.shared.grayText
     }
     
     func setupRestoreButton() {
@@ -180,7 +180,7 @@ class SignInViewController: UIViewController {
         restoreButton.backgroundColor = .clear
         restoreButton.alpha = 0.4
         restoreButton.setTitle("не помню", for: .normal)
-        restoreButton.setTitleColor(.darkGray, for: .normal)
+        restoreButton.setTitleColor(CustomColor.shared.grayText, for: .normal)
         restoreButton.addTarget(self, action: #selector(restoreAction(_:)), for: .touchUpInside)
     }
     
@@ -191,8 +191,8 @@ class SignInViewController: UIViewController {
         shadowLogView.heightAnchor.constraint(equalToConstant: 57).isActive = true
         
         
-        shadowLogView.backgroundColor = .systemGreen
-        shadowLogView.layer.shadowColor = UIColor.systemGreen.cgColor
+        shadowLogView.backgroundColor = CustomColor.shared.greenButton
+        shadowLogView.layer.shadowColor = CustomColor.shared.greenButton.cgColor
         shadowLogView.layer.shadowOpacity = 3
         shadowLogView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         shadowLogView.layer.shadowRadius = 4
@@ -206,7 +206,7 @@ class SignInViewController: UIViewController {
         logInButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
         logInButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        logInButton.backgroundColor = .systemGreen
+        logInButton.backgroundColor = CustomColor.shared.greenButton
         logInButton.setTitle("ВОЙТИ", for: .normal)
         logInButton.setTitleColor(.white, for: .normal)
         logInButton.layer.cornerRadius = 5
@@ -223,8 +223,8 @@ class SignInViewController: UIViewController {
         restoreLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
         
         restoreLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        restoreLabel.alpha = 0.8
-        restoreLabel.textColor = .darkGray
+        restoreLabel.alpha = 54/100
+        restoreLabel.textColor = CustomColor.shared.grayText
         restoreLabel.textAlignment = .center
         restoreLabel.text = "Нету аккаунта?"
     }
@@ -234,8 +234,9 @@ class SignInViewController: UIViewController {
         firstLineView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         firstLineView.rightAnchor.constraint(equalTo: restoreLabel.leftAnchor, constant: 25).isActive = true
         firstLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        firstLineView.alpha = 12/100
         
-        firstLineView.backgroundColor = .black
+        firstLineView.backgroundColor = CustomColor.shared.grayText
     }
     
     func setupSecondLine() {
@@ -243,8 +244,9 @@ class SignInViewController: UIViewController {
         secondLineView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         secondLineView.leftAnchor.constraint(equalTo: restoreLabel.rightAnchor, constant: -25).isActive = true
         secondLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        secondLineView.alpha = 12/100
         
-        secondLineView.backgroundColor = .black
+        secondLineView.backgroundColor = CustomColor.shared.grayText
     }
     
     func setupShadowPasView() {
@@ -253,8 +255,8 @@ class SignInViewController: UIViewController {
         shadowRegView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -42).isActive = true
         shadowRegView.heightAnchor.constraint(equalToConstant: 57).isActive = true
         
-        shadowRegView.backgroundColor = .systemBlue
-        shadowRegView.layer.shadowColor = UIColor.systemBlue.cgColor
+        shadowRegView.backgroundColor = CustomColor.shared.blueButton
+        shadowRegView.layer.shadowColor = CustomColor.shared.blueButton.cgColor
         shadowRegView.layer.shadowOpacity = 3
         shadowRegView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         shadowRegView.layer.shadowRadius = 4
@@ -268,17 +270,13 @@ class SignInViewController: UIViewController {
         registerButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
         registerButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        registerButton.backgroundColor = .systemBlue
+        registerButton.backgroundColor = CustomColor.shared.blueButton
         registerButton.setTitle("ЗАРЕГИСТРИРОВАТЬСЯ", for: .normal)
         registerButton.setTitleColor(.white, for: .normal)
         // хочу размер сделать, пока не знаю как, но исправлю
         registerButton.layer.cornerRadius = 5
         registerButton.clipsToBounds = true
         registerButton.addTarget(self, action: #selector(registerAction(_:)), for: .touchUpInside)
-        
-        let shadow = UIView(frame: registerButton.frame)
-        shadow.backgroundColor = .blue
-        registerButton.addSubview(shadow)
     }
     
 

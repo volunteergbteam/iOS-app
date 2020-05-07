@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015E77DFD7BACEE94A748465 /* libPods-Volunteering.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E374C0E9705FC29DC4BF0C8 /* libPods-Volunteering.a */; };
 		A827448624641551008E360A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827448524641551008E360A /* AppDelegate.swift */; };
 		A827448824641551008E360A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827448724641551008E360A /* SceneDelegate.swift */; };
-		A827448A24641551008E360A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827448924641551008E360A /* ViewController.swift */; };
+		A827448A24641551008E360A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827448924641551008E360A /* SignInViewController.swift */; };
 		A827448D24641551008E360A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827448B24641551008E360A /* Main.storyboard */; };
 		A827448F24641553008E360A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A827448E24641553008E360A /* Assets.xcassets */; };
 		A827449224641553008E360A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827449024641553008E360A /* LaunchScreen.storyboard */; };
-		CB4737060C138BE027AEAD07 /* Pods_Volunteering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2173DF4A254739AC278E3640 /* Pods_Volunteering.framework */; };
+		A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2173DF4A254739AC278E3640 /* Pods_Volunteering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Volunteering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4596686FD0944A7DB37A9334 /* Pods-Volunteering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Volunteering.release.xcconfig"; path = "Target Support Files/Pods-Volunteering/Pods-Volunteering.release.xcconfig"; sourceTree = "<group>"; };
 		62DB9FE954C7A62DB6283B22 /* Pods-Volunteering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Volunteering.debug.xcconfig"; path = "Target Support Files/Pods-Volunteering/Pods-Volunteering.debug.xcconfig"; sourceTree = "<group>"; };
+		6E374C0E9705FC29DC4BF0C8 /* libPods-Volunteering.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Volunteering.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A827448224641551008E360A /* Volunteering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volunteering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A827448524641551008E360A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A827448724641551008E360A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A827448924641551008E360A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A827448924641551008E360A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A827448C24641551008E360A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A827448E24641553008E360A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A827449124641553008E360A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A827449324641553008E360A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4737060C138BE027AEAD07 /* Pods_Volunteering.framework in Frameworks */,
+				015E77DFD7BACEE94A748465 /* libPods-Volunteering.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +47,7 @@
 		68A98D6E70D4972AEDA8A989 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2173DF4A254739AC278E3640 /* Pods_Volunteering.framework */,
+				6E374C0E9705FC29DC4BF0C8 /* libPods-Volunteering.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,9 +73,10 @@
 		A827448424641551008E360A /* Volunteering */ = {
 			isa = PBXGroup;
 			children = (
+				A9DF6AB22464689800C55C72 /* Custom */,
+				A9DF6AAE246429C600C55C72 /* Screens */,
 				A827448524641551008E360A /* AppDelegate.swift */,
 				A827448724641551008E360A /* SceneDelegate.swift */,
-				A827448924641551008E360A /* ViewController.swift */,
 				A827448B24641551008E360A /* Main.storyboard */,
 				A827448E24641553008E360A /* Assets.xcassets */,
 				A827449024641553008E360A /* LaunchScreen.storyboard */,
@@ -82,13 +85,36 @@
 			path = Volunteering;
 			sourceTree = "<group>";
 		};
+		A9DF6AAE246429C600C55C72 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF6AAF246429D200C55C72 /* Register View */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A9DF6AAF246429D200C55C72 /* Register View */ = {
+			isa = PBXGroup;
+			children = (
+				A827448924641551008E360A /* SignInViewController.swift */,
+				A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */,
+			);
+			path = "Register View";
+			sourceTree = "<group>";
+		};
+		A9DF6AB22464689800C55C72 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		DCF8180CC95B0D3288C1C040 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				62DB9FE954C7A62DB6283B22 /* Pods-Volunteering.debug.xcconfig */,
 				4596686FD0944A7DB37A9334 /* Pods-Volunteering.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,7 +129,6 @@
 				A827447E24641551008E360A /* Sources */,
 				A827447F24641551008E360A /* Frameworks */,
 				A827448024641551008E360A /* Resources */,
-				7995637762E63BAAEAF132E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,23 +208,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7995637762E63BAAEAF132E0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Volunteering/Pods-Volunteering-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Volunteering/Pods-Volunteering-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Volunteering/Pods-Volunteering-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A827448A24641551008E360A /* ViewController.swift in Sources */,
+				A827448A24641551008E360A /* SignInViewController.swift in Sources */,
 				A827448624641551008E360A /* AppDelegate.swift in Sources */,
+				A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */,
 				A827448824641551008E360A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

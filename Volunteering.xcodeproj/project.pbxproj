@@ -16,6 +16,7 @@
 		A827449224641553008E360A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827449024641553008E360A /* LaunchScreen.storyboard */; };
 		A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */; };
 		A9DF6AB62464807F00C55C72 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF6AB52464807F00C55C72 /* CustomColor.swift */; };
+		A9F0F6C42466B9E7003905EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0F6C32466B9E7003905EF /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A827449324641553008E360A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9DF6AB024642A8100C55C72 /* SignInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNavigationController.swift; sourceTree = "<group>"; };
 		A9DF6AB52464807F00C55C72 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		A9F0F6C32466B9E7003905EF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		A9DF6AAE246429C600C55C72 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A9F0F6C22466B9C5003905EF /* Register View */,
 				A9DF6AAF246429D200C55C72 /* SignIn View */,
 			);
 			path = Screens;
@@ -110,6 +113,14 @@
 				A9DF6AB52464807F00C55C72 /* CustomColor.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		A9F0F6C22466B9C5003905EF /* Register View */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0F6C32466B9E7003905EF /* RegisterViewController.swift */,
+			);
+			path = "Register View";
 			sourceTree = "<group>";
 		};
 		DCF8180CC95B0D3288C1C040 /* Pods */ = {
@@ -221,6 +232,7 @@
 				A827448A24641551008E360A /* SignInViewController.swift in Sources */,
 				A827448624641551008E360A /* AppDelegate.swift in Sources */,
 				A9DF6AB124642A8100C55C72 /* SignInNavigationController.swift in Sources */,
+				A9F0F6C42466B9E7003905EF /* RegisterViewController.swift in Sources */,
 				A9DF6AB62464807F00C55C72 /* CustomColor.swift in Sources */,
 				A827448824641551008E360A /* SceneDelegate.swift in Sources */,
 			);

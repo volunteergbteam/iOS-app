@@ -141,7 +141,7 @@ class SignInViewController: UIViewController {
         passwordLabel.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 5).isActive = true
         passwordLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         passwordLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
-        passwordLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        passwordLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         passwordLabel.font = UIFont.systemFont(ofSize: 15)
         passwordLabel.textColor = CustomColor.shared.blueText
@@ -234,7 +234,6 @@ class SignInViewController: UIViewController {
         firstLineView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         firstLineView.rightAnchor.constraint(equalTo: restoreLabel.leftAnchor, constant: 25).isActive = true
         firstLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        firstLineView.alpha = 12/100
         
         firstLineView.backgroundColor = CustomColor.shared.grayText
     }
@@ -244,7 +243,6 @@ class SignInViewController: UIViewController {
         secondLineView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         secondLineView.leftAnchor.constraint(equalTo: restoreLabel.rightAnchor, constant: -25).isActive = true
         secondLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        secondLineView.alpha = 12/100
         
         secondLineView.backgroundColor = CustomColor.shared.grayText
     }
@@ -297,7 +295,17 @@ extension SignInViewController {
     }
     
     @objc func registerAction(_ sender: UIButton!) {
-        // fix me
+        let registerViewController = RegisterViewController()
+        navigationController?.pushViewController(registerViewController, animated: true)
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        backButton.tintColor = CustomColor.shared.grayText
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        navigationController?.navigationBar.alpha = 54/100
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = UIColor.clear
         print("Oy press me register")
     }
     

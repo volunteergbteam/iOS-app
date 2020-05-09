@@ -125,6 +125,7 @@ class SignInViewController: UIViewController {
         loginTextField.tintColor = .darkGray
         loginTextField.font = UIFont.systemFont(ofSize: 20)
         loginTextField.textAlignment = .left
+        loginTextField.alpha = 87/100
     }
     
     func setupLineLog() {
@@ -132,7 +133,7 @@ class SignInViewController: UIViewController {
         logLineView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         logLineView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
         logLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        logLineView.alpha = 0.7
+        logLineView.alpha = 12/100
         
         logLineView.backgroundColor = CustomColor.shared.grayText
     }
@@ -159,6 +160,7 @@ class SignInViewController: UIViewController {
         passwordTextField.tintColor = CustomColor.shared.grayText
         passwordTextField.font = UIFont.systemFont(ofSize: 20)
         passwordTextField.textAlignment = .left
+        passwordTextField.alpha = 87/100
     }
     
     func setupLinePas() {
@@ -166,7 +168,7 @@ class SignInViewController: UIViewController {
         pasLineView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         pasLineView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
         pasLineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        pasLineView.alpha = 0.7
+        pasLineView.alpha = 12/100
         
         pasLineView.backgroundColor = CustomColor.shared.grayText
     }
@@ -178,7 +180,7 @@ class SignInViewController: UIViewController {
         restoreButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         restoreButton.backgroundColor = .clear
-        restoreButton.alpha = 0.4
+        restoreButton.alpha = 54/100
         restoreButton.setTitle("не помню", for: .normal)
         restoreButton.setTitleColor(CustomColor.shared.grayText, for: .normal)
         restoreButton.addTarget(self, action: #selector(restoreAction(_:)), for: .touchUpInside)
@@ -290,9 +292,19 @@ extension SignInViewController {
     }
     
     @objc func restoreAction(_ sender: UIButton!) {
-        // сделаю потом дальнейшие действия по переходну на другой экран
-        // пока загулушка
-        // fix me
+        let restoreViewController = RestoreViewController()
+        navigationController?.pushViewController(restoreViewController, animated: true)
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        backButton.tintColor = CustomColor.shared.grayText
+//        backButton.customView?.alpha = 54/100
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        navigationController?.navigationBar.alpha = 54/100
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = UIColor.clear
+        
         print("Oyy press me restore")
     }
     
